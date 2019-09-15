@@ -24,7 +24,7 @@
 
 let money;
 do {
-    money = Number(prompt("Ваш бюджет на месяц?",""));
+    money = +prompt("Ваш бюджет на месяц?","");
 }
 while(!money);
 let time = prompt("Введите дату в формате YYYY-MM-DD","");
@@ -34,9 +34,8 @@ do {
 }
 while(!moneySpend);
 let moneyDrop
-// = Number(prompt("Во сколько обойдется?",""));
 do {
-    moneyDrop = Number(prompt("Во сколько обойдется?",""));
+    moneyDrop = +prompt("Во сколько обойдется?","");
 }
 while (!moneyDrop);
 let moneySpend2;
@@ -46,7 +45,7 @@ do {
 while (!moneySpend2);
 let moneyDrop2;
 do {
-moneyDrop2 = Number(prompt("Во сколько обойдется?",""));
+moneyDrop2 = +prompt("Во сколько обойдется?","");
 }
 while(!moneyDrop2);
 let appData =  {
